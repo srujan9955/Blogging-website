@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    user-select: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* header page start */
+.header{
+   padding: 0.5rem;
+}
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav .btn{
+    font-size: 1rem;
+}
+.header nav .logo{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.header nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+}
+.header nav .nav{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 1rem;
+}
+.header nav a:hover{
+    color: tomato;
+}
+/* header page end */
+
+
+.Home-page{
+    background: url(../Assets/banner4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+}
+/* home page end */
+
+/* footer page start */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5rem  1rem;
+    background: rgba(0, 0, 0, 0.829);
+    color: white;
+}
+.footer .box{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    text-align: center;
+}
+.footer .box .about{
+    text-align: justify;
+    font-size: 0.95rem;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    
+}
+/* footer page end */
+
+/* profile page start */
+
+.profile{
+    width: 100vw;
+    height: 100vh;
+    background: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* profile page end */
+
+/* blog editor page start */
+
+
+.blog .card{
+    width: 70rem;
+    height: 35rem;
+    position: relative;
+    left: 8%;
+    height: fit-content;
+}
+.blog .card-body .icons{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.show-blog-content .card{
+    width: 100% !important;  
+}
+.blog .icons button:hover{
+    background-color: goldenrod;
+}
+
+.blog .card textarea{
+    border: none;
+    outline: none;
+    margin:2rem 0  0 5rem;
+    color: grey;
+}
+.blog .card input{
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 85%;
+}
+
+.blog .card .image{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.blog .card .card-header{
+    margin: 1rem 0 0.5rem 2rem;
+    justify-content: baseline;
+    background-color: white;
+}
+/* blog editor page end */
+
+/* dashboard page start */
+.dashboard{
+    display: flex;
+    margin-bottom: 3rem; 
+    margin-top: 3rem;
+}
+.dashboard .dashboard-box{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    margin-left: 3rem;
+}
+.dashboard-box p{
+    margin-left: 30%;
+    color: grey;
+}
+.dashboard .dashboard-box .card{
+    width: 20rem;
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+    justify-content: baseline;
+    align-items: center;
+}
+.dashboard .dashboard-box h1{
+    color: tomato;
+}
+.dashboard .menu{
+    text-align: center;
+    margin-left: 0.5rem;
+    height: fit-content;
+    padding:0  1rem;
+}
+.dashboard .menu a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1rem 0;
+}
+.dashboard .menu a:hover{
+    background: lightgrey;
+}
+/* dashboard page end */
+
+/* blog page start */
+
+.blogs .image img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+.blogs .image nav{
+    background-color: rgba(173, 216, 230, 0.185);
+    padding:0.5rem 1rem;
+    width: 100%;
+}
+.blogs .blog-content h3{
+    margin:1rem;
+}
+.blogs .blog-content p{
+    color: gray;
+    padding: 2rem 3rem;
+    text-align: justify;
+}
+.blogs .blog-content .like{
+    width: 95%;
+    text-align: end;
+}
+.blogs  svg{
+   cursor: pointer;
+   margin:0 1rem;
+}
+.blogs .blog-content .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+/* blog page end */
+
+/* blog-card page start */
+.blog-card .card{
+    width: 20rem;
+    height: 25rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 1rem;
+}
+.blog-card{
+    flex-flow: row wrap;
+}
+.blog-card a{
+    text-decoration: none;
+    color: black;
+}
+.blog-card .card .image{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 2s ease;
+}
+.blog-card .card:hover img {
+    transform: scale(1.1);
+}
+.blog-card .card .content{
+    padding: 1rem;
+    overflow: hidden;
+}
+.blog-card .card h6{
+    color: tomato;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+.blog-card .content p{
+    color: gray;
+}
+/* blog-card page end */
+
+/* commment page start */
+.comment p{
+color: gray;
+padding: 1rem;
+}
+.comment{
+    margin: 0.5rem 0;
+}
+.comment .card-header{
+    justify-content: space-between;
+    margin: 0 1rem;
+    border: none;
+}
+.comment .img img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.comment .img{
+    display: flex;
+    gap: 1rem;
+    justify-content: baseline;
+    align-items: center;
+}
+.comment svg{
+    color: orange;
+}
+/* commment page end */
+
+
+/* login page start */
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 1rem;
+}
+.card{
+    width: 30rem;
+}
+.card form{
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.card form input{
+    width: 20rem;
+    margin: 1rem;
+
+    padding: 0.5rem;
+}
+
+/* login page end */
